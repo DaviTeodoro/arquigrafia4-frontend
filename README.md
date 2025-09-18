@@ -40,6 +40,19 @@ Compila minimizado e mais demorado, necessário para deploy no servidor:
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions). -->
 
+## Testes
+
+- Requisitos: `npm install` (uma vez) e app rodando em `http://localhost:8080` para E2E (`npm start`).
+- Abrir a interface do Cypress: `npm run test:open`
+  - E2E: com o app rodando, escolha End-to-End Testing.
+  - Componentes: escolha Component Testing.
+- Execução headless:
+  - E2E: com o app rodando, `npm run test:run`
+  - Componentes: `npx cypress run --component`
+- Pastas:
+  - E2E: `cypress/e2e`
+  - Componentes: `src/components/**/*.{cy.js,cy.jsx,cy.ts,cy.tsx}`
+
 ## Licença
 
 O projeto ARQUIGRAFIA é um software livre licenciado segundo diretrizes da [MIT license](https://opensource.org/licenses/MIT).
